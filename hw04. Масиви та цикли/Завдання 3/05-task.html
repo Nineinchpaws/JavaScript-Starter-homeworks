@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+</head>
+<body>
+    <pre>
+        Завдання:
+        Знайдіть перший позитивний елемент масиву та виведіть його на екран.
+    </pre>
+    <script>
+        let values = [-1, -5, -6, -3, -10, -5, 3, 4, -1, -8, 1, -10, 3];
+        alert('Масив: ' + values);
+
+        for (let index = 0; index < values.length; index++) {
+            const element = values[index];
+            if (element > 0) {
+                alert('Перший позитивний елемент: ' + element);
+                break;
+            }
+        }
+    </script>
+</body>
+</html>

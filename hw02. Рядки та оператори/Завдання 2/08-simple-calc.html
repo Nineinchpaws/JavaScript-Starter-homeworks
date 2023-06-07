@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Простой калькулятор</title>
+</head>
+
+<body>
+    <script>
+        // Додайте логіку калькулятора. Додайте операції множення, ділення та віднімання.
+        // Виведіть результати на екран двома способами: через конкатенацію та через шаблонні рядки.
+        
+        let inputX = prompt("Введите первое число", 0);
+        let inputY = prompt("Введите второе число", 0);
+
+        let x = Number(inputX);
+        let y = Number(inputY);
+
+        let sum = x + y;
+        // let sum = inputX + inputY;
+        let dob = inputX * inputY;
+        let chas = inputX / inputY;
+        let rizn = inputX - inputY;
+
+        alert(`
+        ${x} + ${y} = ${sum} 
+        ${x} * ${y} = ${dob} 
+        ${x} / ${y} = ${chas} 
+        ${x} - ${y} = ${rizn}`);
+
+        alert(
+        inputX + '+' + inputY + '=' + sum + '; ' +
+        inputX + '*' + inputY + '=' + dob + '; ' +
+        inputX + '/' + inputY + '=' + chas + '; ' +
+        inputX + '-' + inputY + '=' + rizn
+        );
+
+    </script>
+</body>
+
+</html>

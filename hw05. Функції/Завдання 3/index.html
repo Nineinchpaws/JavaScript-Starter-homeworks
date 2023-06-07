@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 3</title>
+</head>
+<body>
+    <pre>
+        Створіть одну глобальну змінну з довільним значенням і дві функції.
+        Продемонструйте, що глобальна змінна може використовуватись в цих двох функціях. 
+    </pre>
+    <script>
+        let global = 'Hello, World!';
+
+        function MessageOne() {
+            console.log(global);
+        }
+        MessageOne();
+
+        function MessageTwo() {
+            console.log(global);
+        }
+        MessageTwo();
+    </script>
+</body>
+</html>

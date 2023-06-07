@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+</head>
+<body>
+    <pre>
+        Завдання:
+        Створіть функцію, яка приймає масив значень і повертає масив з значеннями, що дублюються, або null якщо повторюваних значень в масиві немає.
+    </pre>
+    <script>
+
+        function dubbed() {
+            let array = []; 
+
+            for (let i = 0; i < 10; i++ ) {
+                let randomValue = Math.floor(Math.random() * 101);
+                array[i] = randomValue;
+            } 
+            console.log(array);
+
+            let array2 = [];
+            for (let i = 0; i < array.length; i++) {
+                for (let k = i + 1; k < array.length; k++){
+                    if (array[i] == array[k]) {
+                        array2.push(array[i], array[k]);
+                        // array2[array2.length] = array[i], array[k];
+                        console.log(array2);
+                    } else {
+                        console.log(null);
+                    }
+                }
+            }
+        }
+        
+        dubbed();   
+    </script>
+</body>
+</html>

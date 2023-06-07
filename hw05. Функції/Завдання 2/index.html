@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 2</title>
+</head>
+<body>
+    <pre>
+        Створіть функцію, яка приймає два параметри і вертає суму значень цих параметрів.
+        Викличте функцію з двома довільними значеннями і відобразіть результат роботи функції на екран.
+    </pre>
+    <script>
+
+        let a;
+        let b;
+        let mid;
+
+        function ask() {
+            a = Math.floor(Math.random() * 101);
+            b = Math.floor(Math.random() * 101);
+            mid = a + b;
+        }
+
+        function say() {
+            console.log(`Перше значення: ${a}`);
+            console.log(`Друге значення: ${b}`);
+            console.log(`Сума: ${mid}`);
+        }
+
+        ask();
+        say();
+    </script>
+    
+</body>
+
+</html>
